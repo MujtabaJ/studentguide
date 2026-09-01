@@ -205,9 +205,20 @@ Your data stays on this device. There are no ads, no tracking, and no sign-in.
 |---|---|---|
 | High-res icon | 512 × 512 PNG | `assets/store/play_icon_512.png` |
 | Feature graphic | 1024 × 500 PNG | `assets/store/feature_graphic_1024x500.png` |
-| Phone screenshots | at least **2**, up to 8 | Capture on a phone or emulator |
+| Phone screenshots | 1170 × 2532 JPEG (up to 8) | `assets/store/screenshots/play/` |
 
-Screenshot tips: 16:9 or 9:16 JPEG/PNG, no borders. Capture **Home**, **Planner**, **Study**, **Grades**, and **Timer**. JPEG is fine.
+Upload these **in this order** under Phone screenshots:
+
+1. `01_home.jpg` — dashboard
+2. `02_planner_tasks.jpg` — tasks
+3. `03_timetable.jpg` — weekly schedule
+4. `04_exams.jpg` — exam countdown
+5. `05_study.jpg` — study hub
+6. `06_timer.jpg` — Pomodoro timer
+7. `07_flashcards.jpg` — flashcard decks
+8. `08_grades.jpg` — GPA
+
+They are 24-bit JPEGs (no alpha), which Play Console accepts.
 
 Tablet screenshots are optional.
 
@@ -231,4 +242,4 @@ On the **Dashboard** / **Publishing overview**, every item should show a green c
 - [ ] Financial: none
 - [ ] Health: none
 - [ ] Category: Education + contact email
-- [ ] Store listing text + 512 icon + 1024×500 graphic + 2 phone screenshots
+- [ ] Store listing text + 512 icon + 1024×500 graphic + 8 phone JPEGs in `assets/store/screenshots/play/`
