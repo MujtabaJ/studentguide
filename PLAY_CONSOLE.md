@@ -98,6 +98,16 @@ Pick **teen and adult students**, not young children. That matches a high-school
 
 Do not enable “Restrict minor access” (that is only if 18+ is the *only* group).
 
+### Advertising ID (Android 13 declaration)
+
+Play Console: **Policy → App content** (or the warning on the release).
+
+**Does your app use advertising ID?** → **No**
+
+Student Guide has no ads, AdMob, Firebase Analytics, or other SDKs that read Google advertising ID. After you select **No**, save. You do **not** need a new app bundle for this declaration.
+
+The Android manifest explicitly removes `com.google.android.gms.permission.AD_ID` so a future plugin cannot add it.
+
 ### 6. Data safety
 
 - Click **Start**
@@ -106,7 +116,8 @@ Do not enable “Restrict minor access” (that is only if 18+ is the *only* gro
 - On-device notes/tasks/GPA stay on the phone. Google’s form is about data **your app or SDKs send off the device**. This app does not.
 - **Is all user data encrypted in transit?** — only appears if you said Yes to collection. Skip.
 - **Do you provide a way for users to request that their data is deleted?** — skip if collection is No. (Users can still wipe data in **Settings → Clear all data**.)
-- **Does your app use advertising ID?** → **No** (if asked)
+- **Does your app use advertising ID?** → **No**
+  (No ads, AdMob, Firebase Analytics, or other ID SDKs. Do not add `AD_ID` to the manifest.)
 - Preview the Data safety listing: it should say the app **does not collect** user data
 - **Submit** / **Save**
 
